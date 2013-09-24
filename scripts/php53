@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PHP_INI_SCAN_DIR=/etc/php53/cli/conf.d
+exec /usr/bin/php53.real -c /etc/php53/cli/php.ini $1 $2 $3 $4 $5

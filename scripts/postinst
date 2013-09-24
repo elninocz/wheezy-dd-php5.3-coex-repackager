@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+ucf /usr/share/php53/php.ini-production /etc/php53/cgi/php.ini
+ucf /usr/share/php53/php.ini-production /etc/php53/cli/php.ini
+ucf /usr/share/php53/php.ini-production /etc/php53/fpm/php.ini
+
+exit 0
