@@ -17,6 +17,20 @@ Installation requirements
 To install the resulting package you need to have Debian Squeeze repository and Dotdeb Wheezy repository activated:
 
 /etc/apt/sources.list:
-  ...
-  deb http://ftp.cz.debian.org/debian/ squeeze main
-  deb http://packages.dotdeb.org wheezy all
+```
+...
+deb http://ftp.cz.debian.org/debian/ squeeze main
+deb http://packages.dotdeb.org wheezy all
+```
+
+Usage
+-----
+
+After installation, the following executables will be available:
+
+* php53
+* php53-cgi
+* php53-fpm
+
+When using fpm or cgi variant, you currently have to set the right config file and scan directory your self
+(look into scripts/php53 wrapper to see how).
