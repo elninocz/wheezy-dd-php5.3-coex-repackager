@@ -56,6 +56,13 @@ fpm -s dir \
     -t deb \
     -n php53-coex \
     -v $VERSION \
+    -d libonig2 \
+    -d libssl0.9.8 \
+    -d libdb4.8 \
+    -d libqdbm14 \
+    -d libmcrypt4 \
+    -d libcurl3 \
+    -d "libt1-5" \
     -d libmemcached11 \
     -d libicu44 \
     -d "libmagickcore3 >= 8:6.6.0.4" \
